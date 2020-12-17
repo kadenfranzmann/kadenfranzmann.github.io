@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="google" content="notranslate"><meta name="viewport" content="target-densitydpi=device-dpi,user-scalable=1,minimum-scale=1,maximum-scale=2.5,initial-scale=1,width=device-width"><meta http-equiv="X-UA-Compatible" content="IE=edge;"><meta name="referrer" content="strict-origin-when-cross-origin"><title>Subscriber_Chat - Google Drive</title><link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico"><link href="./3444775139-waffle_k_ltr.css" type="text/css" rel="stylesheet"><style type="text/css" nonce="">
+        html { overflow: visible; }
+        #sheets-viewport { overflow: auto; }
+        #sheets-viewport.widget-viewport { overflow: hidden; }
+        .grid-container { overflow: visible; background: white;}
+        .grid-table-container { overflow: visible; }
+        #top-bar {
+          margin: 0;
+          overflow: hidden;
+        }
+        #top-bar {
+          border-bottom: 1px solid #ccc;
+          padding: 6px 6px 0;
+        }
+        #doc-title { padding-bottom: 5px; }
+        #doc-title .name { font-size: 15px; }
+        #sheet-menu {
+          font-size: 13px;
+          margin: 6px 0 0;
+          padding: 0 0 5px;
+        }
+        #sheet-menu li {
+          display: inline;
+          list-style-type: none;
+          margin: 0;
+          padding: 5px 8px;
+        }
+        #sheet-menu li.active {
+          background-color: #fff;
+          font-weight: bold;
+          border: 1px solid #999;
+        }
+        #top-bar #sheet-menu li.active {
+          border-bottom: 0;
+        }
+        #sheet-menu a, #sheet-menu a:visited { color: #07c; }
+        #footer {
+          background: #f0f0f0;
+          border-top: 1px #ccc solid;
+          border-bottom: 1px #ccc solid;
+          font-size: 13;
+          padding: 10px 10px;
+        }
+        .dash {
+          padding: 0 6px;
+        }
+        .ritz .waffle a { color: inherit; }.ritz .waffle .s5{border-left: none;background-color:#ffffff;}.ritz .waffle .s2{background-color:#ffffff;text-align:right;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s6{border-left: none;border-right: none;background-color:#ffffff;text-align:left;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s1{background-color:#ffffff;text-align:left;text-decoration:underline;-webkit-text-decoration-skip:none;text-decoration-skip-ink:none;color:#1155cc;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s4{border-left: none;background-color:#ffffff;text-align:left;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s0{background-color:#ffffff;text-align:left;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s3{border-right: none;background-color:#ffffff;text-align:left;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}</style><script type="text/javascript" nonce="">
+        var activeSheetId;
+
+        function switchToSheet(id) {
+          if (document.getElementById('sheet-menu')) {
+            document.getElementById('sheet-button-' + activeSheetId)
+                .className = '';
+            document.getElementById('sheet-button-' + id).className = 'active';
+          }
+
+          document.getElementById(activeSheetId).style.display = 'none';
+          document.getElementById(id).style.display = '';
+          activeSheetId = id;
+
+          // posObjs() is defined in embeddedObjectJs (see EmbeddedObjectHtmlBuilder.java)
+          posObjs();
+          return false;
+        }
+        
+        function init() {
+        var optPageSwitcher;
+        
+        function resize() {
+          var optMobileWebHeader = document.getElementById('docs-ml-header-id');
+          var optTopBar = document.getElementById('top-bar');
+          var optFooter = document.getElementById('footer');
+          var sheetsViewport = document.getElementById('sheets-viewport');
+
+          if (optMobileWebHeader) {
+            sheetsViewport.style.marginTop = optMobileWebHeader.offsetHeight +
+                (optTopBar ? optTopBar.offsetHeight : 0) + 'px';
+          }
+          var adjustedHeight = window.innerHeight -
+              (optTopBar ? optTopBar.offsetHeight : 0) -
+              (optFooter ? optFooter.offsetHeight : 0);
+          var adjustedWidth = window.innerWidth;
+          sheetsViewport.style.width = (adjustedWidth + 'px');
+          sheetsViewport.style.height = (adjustedHeight + 'px');
+          if (optPageSwitcher) {
+            optPageSwitcher.resize(adjustedWidth, adjustedHeight);
+          }
+        }
+        resize();
+        window.onresize = resize;
+        var currentUrl = window.location.href;
+        var newUrl = currentUrl.replace('?sle=true&', '?');
+        newUrl = newUrl.replace('?sle=true', '');
+        newUrl = newUrl.replace('&sle=true&', '&');
+        newUrl = newUrl.replace('&sle=true', '');
+        window.history.replaceState(null, '', newUrl);
+        }
+        </script><script nonce="">_docs_flag_initialData={"docs-mwid":true,"docs-smheo":true,"info_params":{"token":"AC4w5Vgbzp6wA2MHR9y1JcV9AEI8NNgZNQ:1608161485537","includes_info_params":true},"ilcm":{"eui":"ADFN-cviuqo1ZEBX-Z-KNJRA9s8TIV9mxUda1b4FTu39d5c_wPXPyWw5RV3pjlKg4PyEAGXA3h3J","je":1,"sstu":1608161485541000,"si":"CPKj2bDU0-0CFQRNJQodWFUORQ","gsc":1,"ei":[5700893,5716983,5711685,5710364,5702023,5707204,5707832,5705777,5720906,5701461,5711889,5712905,5716028,5709085,5713207,5719527,5700016,5706007,5710933,5702912,5712471,5700019,5706993,5715399,5720060,5714550,5708927,5703186,5710621,5712033,5714796,5711012,5714628,5713223,5710677,5706933,5712473,5713657,5711826,5700103,5706133,5713191,5703815,5707609,5707385,5700446,5709661,5720595,5706661,5706621,5711550,5706423,5701903,5714330,5712447,5700042,5719535,5715222,5714780,5700933,5702849,5708862,5700579,5706169,5708974,5716145,5710745,5707657,5720487,5711765,5713597,5719172,5714326,5703451,5712373,5715286,5700057,5710645,5709014,5706270,5705581,5703022,5704063,5712211,5710476,5707856,5715824,5715290,5715637,5714445,5711769,5719212,5706523,5701761,5720925,5700559,5704641,5712909,5712300,5712635,5714047,5702936,5712352,5713152,5702785,5711099,5717118,5713605,5716141,5700884,5706601,5707047,5704581,5707425,5705585,5718631,5706069,5711677,5707649,5709976,5711850,5717161,5715246,5713227,5707445,5712917,5701594,5721344,5709617,5705493,5713211,5705357,5713049,5702135,5703837,5712929,5707986,5708480,5709447,5703663,5713195,5712477,5702706,5705625,5705223,5709357,5711297,5707819,5711546,5703839,5701650,5715641,5710748,5703762,5712525,5708826,5713681,5709381,5709476,5713554,5720568,5714310,5703259,5709892,5721004,5703591,5708886,5708870,5710637,5703913,5711708,13702625,5711773,5703182,5713544,5707711,5712913,5705047,5707197,5710893,5720730,5711524,5701034,5721014,5720483,5719651,5717949,5700333,5702445,5704144,5715515,5704883,5715580,5719462,5711230,5711155,5714961,5720788,5709864,5712395,5722567,5709411,5700422,5714843,5709709,5711471,5711808],"crc":0,"cvi":[]},"drive_url":"//drive.google.com/u/0?usp\u003dsheets_web","docs-ehr":true,"docs-sup":"/spreadsheets/u/0"}; _docs_flag_cek='nKyEdx7maw4lPepHpWj6cg\x3d\x3d'; if (window['DOCS_timing']) {DOCS_timing['ifdld']=new Date().getTime();}</script><script nonce="">document.addEventListener('DOMContentLoaded', init);</script></head><body class="docs-gm" marginwidth="0" marginheight="0"><div id="sheets-viewport" style="width: 728px; height: 372px;"><div id="1338940410" style="position: relative;" dir="ltr"><div class="ritz grid-container" dir="ltr"><table class="waffle" cellspacing="0" cellpadding="0"><thead><tr><th class="row-header freezebar-vertical-handle header-shim row-header-shim"></th><th id="1338940410C0" style="width:150px" class="header-shim"></th><th id="1338940410C1" style="width:180px" class="header-shim"></th><th id="1338940410C2" style="width:114px" class="header-shim"></th><th id="1338940410C3" style="width:113px" class="header-shim"></th><th id="1338940410C4" style="width:150px" class="header-shim"></th></tr></thead><tbody><tr style="height:20px;"><th id="1338940410R0" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">1</div></th><td class="s0">Timestamp</td><td class="s0">Type your comment here</td><td class="s0" dir="ltr">Email Address</td><td class="s0 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 110px; left: -1px;">Have you seen my latest video?</div></td><td class="s1" dir="ltr"><a target="_blank" rel="noreferrer" href="https://www.google.com/url?q=https://docs.google.com/forms/d/e/1FAIpQLSfzOteuHm5FoMQNjcXaMmvv4ckIMFN3H7z5G8u_aLGrkteBzg/viewform?usp%3Dsf_link&amp;sa=D&amp;ust=1608165085571000&amp;usg=AFQjCNHtiw0MB3Th11XtFZ_okK3fS-ukBw">response form</a></td></tr><tr><th style="height:3px" class="freezebar-cell freezebar-horizontal-handle row-header-shim"></th><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td><td class="freezebar-cell"></td></tr><tr style="height:20px;"><th id="1338940410R1" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">2</div></th><td class="s2" dir="ltr">5/2/2020 2:20:52</td><td class="s0" dir="ltr">test.</td><td class="s0" dir="ltr">Admin</td><td class="s0" dir="ltr"></td><td></td></tr><tr style="height:20px;"><th id="1338940410R2" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">3</div></th><td class="s2" dir="ltr">5/2/2020 2:21:49</td><td class="s0" dir="ltr">test 2</td><td class="s3 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 225px; left: -1px;">kaden.3408@gmail.com</div></td><td class="s4" dir="ltr"></td><td class="s5"></td></tr><tr style="height:20px;"><th id="1338940410R3" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">4</div></th><td class="s2" dir="ltr">5/2/2020 2:27:42</td><td class="s0 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 177px; left: -1px;">I am testing the compatibility of this website's chat</div></td><td class="s3 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 225px; left: -1px;">testsitechatforms@gmail.com</div></td><td class="s4" dir="ltr"></td><td class="s5"></td></tr><tr style="height:20px;"><th id="1338940410R4" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">5</div></th><td class="s2" dir="ltr">5/2/2020 2:32:00</td><td class="s3 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 292px; left: -1px;">This is going on my GitHub website.</div></td><td class="s4" dir="ltr"></td><td class="s6 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 261px; left: -1px;">I want to see more minecraft videos.</div></td><td class="s5"></td></tr><tr style="height:20px;"><th id="1338940410R5" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">6</div></th><td class="s2" dir="ltr">9/30/2020 10:02:02</td><td class="s0 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 177px; left: -1px;">lolwhat the hell i cannot belive this is still up</div></td><td class="s0" dir="ltr">futre@ikloud.cum</td><td class="s3 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 261px; left: -1px;">I want to see more minecraft videos.</div></td><td class="s5"></td></tr><tr style="height:20px;"><th id="1338940410R6" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">7</div></th><td class="s2" dir="ltr">11/17/2020 12:38:58</td><td class="s0" dir="ltr">wow nice website</td><td class="s0" dir="ltr">test-2@test.com</td><td class="s3 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 261px; left: -1px;">I want to see more minecraft videos.</div></td><td class="s5"></td></tr></tbody></table></div></div></div>
+<script type="text/javascript" nonce="">
+function posObj(sheet, id, row, col, x, y) {
+  var rtl = false;
+  var sheetElement = document.getElementById(sheet);
+  if (!sheetElement) {
+    sheetElement = document.getElementById(sheet + '-grid-container');
+  }
+  if (sheetElement) {
+    rtl = sheetElement.getAttribute('dir') == 'rtl';
+  }
+  var r = document.getElementById(sheet+'R'+row);
+  var c = document.getElementById(sheet+'C'+col);
+  if (r && c) {
+    var objElement = document.getElementById(id);
+    var s = objElement.style;
+    var t = y;
+    while (r && r != sheetElement) {
+      t += r.offsetTop;
+      r = r.offsetParent;
+    }
+    var offsetX = x;
+    while (c && c != sheetElement) {
+      offsetX += c.offsetLeft;
+      c = c.offsetParent;
+    }
+    if (rtl) {
+      offsetX -= objElement.offsetWidth;
+    }
+    s.left = offsetX + 'px';
+    s.top = t + 'px';
+    s.display = 'block';
+    s.border = '1px solid #000000';
+  }
+};
+function posObjs() {
+};
+posObjs();</script>
+<script type="text/javascript" nonce="">activeSheetId = '1338940410'; switchToSheet('1338940410');</script></body></html>
