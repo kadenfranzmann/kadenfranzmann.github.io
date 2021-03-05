@@ -1,22 +1,43 @@
 <html>
-  <head>
-    <title>Flash Gaming beta</title>
-    <script src="ruffle.js"></script>
-    
-    
-  </head>
-  <body>
+	<head>
+		<link rel="shortcut icon" type="image/ico" href="https://s.ytimg.com/yt/favicon-vfl86270.ico">
+		<script src="ruffle.js"></script>
+		<title>Flxash Gaming beta</title>
+		<script src="ruffle.js"></script>
+		
+		<script>
+    window.RufflePlayer = window.RufflePlayer || {};
 
-
-
-<object width="1000" height="1000">
-    <param name="supersmashflash2" value="main.swf">
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("main.swf");
+    });
+</script>
+<script src="ruffle.js"></script>
+		
+		
+		
+		
+		
+		
+		
+		
+	</head>
+	
+	
+	<body>
+		<h1>test</h1>
+		<object width="1000" height="1000">
+    <param name="main" value="main.swf">
     <embed src="https://mcleodgaming.com.gamecdn.online.arftranslogistic.com/main.swf" width="1000" height="1000">
     </embed>
 </object>
-  
-  
-  
-  
-  </body>
+
+<script src="ruffle.js"></script>
+
+		
+	</body>
 </html>
